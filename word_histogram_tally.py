@@ -22,7 +22,16 @@ def word_histogram_tally(dict):
 
   print(dict)
 
+  result = []
+
+  counter = 0
+
   for i in dict:
-    print(f'{i[0]}: {i[1]}')
+    result.append((i[0], i[1]))
+  
+  print('The top three words are; ')
+  while counter < 3:
+    print(f'{result[counter][0]}: {result[counter][1]}')
+    counter += 1
 
 word_histogram_tally(word_histogram(inp))
