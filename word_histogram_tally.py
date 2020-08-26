@@ -17,14 +17,10 @@ def word_histogram(sentence):
 print(word_histogram(inp))
 
 def word_histogram_tally(dict):
-
-  dict = sorted(dict.items(), key=lambda x: x[1], reverse=True)
-
-  print(dict)
-
+  
   result = []
-
   counter = 0
+  dict = sorted(dict.items(), key=lambda x: x[1], reverse=True)
 
   for i in dict:
     result.append((i[0], i[1]))
